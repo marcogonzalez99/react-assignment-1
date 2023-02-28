@@ -12,7 +12,7 @@ import { Route, Routes } from 'react-router-dom';
 import DefaultViewApp from './components/DefaultViewApp';
 import SingleMovieDetailsView from './components/SingleMovieDetailsViewApp';
 
-import gif from './load.gif';
+// import gif from './load.gif';
 
 function App() {
   // For the movies state
@@ -21,7 +21,7 @@ function App() {
   const [favourited, setFavourites] = React.useState([]);
 
   // Loading Bar
-  const [isLoading, setIsLoading] = useState(true);
+  //const [isLoading, setIsLoading] = useState(true);
 
   // To set the new movie
   const [selectedMovie, setSelectedMovie] = useState(movies.find(movie => movie.id === 13));
@@ -58,7 +58,7 @@ function App() {
           console.error(err);
         }
       } 
-      setIsLoading(false);
+      //setIsLoading(false);
     };
     getData();
   }, [movies.length]);
@@ -109,7 +109,6 @@ function App() {
   // What we are rendering for the user
   return (
     <main>
-      {isLoading && <img src={gif} alt='Loading'></img>}
       <HeaderApp />
       <Routes>
         <Route path='/' element={<Home updateSearch={updateSearch}/>}></Route>
