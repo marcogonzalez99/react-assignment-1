@@ -16,7 +16,7 @@
     "tailwindcss": "^3.2.7",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://marcogonzalez99.github.io/home",
+  "homepage": "https://marcogonzalez99.github.io/react-assignment-1",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
